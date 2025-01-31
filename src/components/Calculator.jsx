@@ -20,12 +20,12 @@ const Calculator = () => {
     return (
         <div className="min-h-screen flex items-center justify-center">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold mb-4 text-black">{result}</div>
+                <div className="text-2xl font-bold mb-4 text-black overflow-x-auto max-w-56">{result}</div>
                 <div className="grid grid-cols-4 gap-2">
                     {arr.map((item) => (
                         <button
                             key={item}
-                            className="bg-blue-500 text-black p-4 rounded-md"
+                            className="bg-black text-white p-4 rounded-md"
                             onClick={() => handleClick(item)}
                         >
                             {item}
